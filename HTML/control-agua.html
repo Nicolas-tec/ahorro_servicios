@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/estilos3.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="menu container">
+            <a href="#" class="logo">menu</a>
+            <input type="checkbox" id="menu">
+            <label for="menu"><img class="menu-icono" src="../IMG/arbol-sobre-fondo-transparente_1308-74201.avif" alt=""></label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../HTML/pagina.html">inicio</a></li>
+                    <li><a href="../HTML/control-gas.html">panel de gas</a></li>
+                    <li><a href="../HTML/control-luz.html">panel de luz</a></li>
+                    <li><a href="../HTML/control-agua.html">panel de agua</a></li>
+                    <li><a href="../HTML/inicio.html">cerrar seccion</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-text">
+            <h1>SISTEMA DE AHORRO DE SERVICIOS</h1>
+        </div>
+    </header>
+    <h2>PANEL DE CONTROL DEL SERVICIO DE AGUA</h2>
+    <br>
+    <table>
+        <tr>
+            <td>codigo de dispositivo o paquete</td>
+            <td>
+                <input type="text" placeholder="12345aeyou" required>
+                <input type="submit" value="enviar" class="boton">
+            </td>
+        </tr>
+        <tr>
+            <td>estado de consumo</td>
+            <td>
+                <center>
+                <div class="switch-container">
+                    <input type="checkbox" id="switch">
+                    <label for="switch" class="lbl"></label>
+                </div>
+                </center>
+            </td>
+        </tr>
+        <tr>
+            <td>consumo de luz</td>
+            <td>
+                <div class="container-c">
+                    <p id="num">0</p><p id="num">Litros</p>
+                    <div class="btns">
+                        <button class="dec">-</button>
+                        <button class="reset">suspender</button>
+                        <button class="inc">+</button>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <script src="../JAVASCRIPT/main.js"></script>
+</body>
+</html>
