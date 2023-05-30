@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2? family= DM+Mono:ital,wght@0,300;0,400;1,400 & family= Open+Sans:wght@400;500;600; 700 & family= Oswald:wght@400;500;600;700 & family= Pangolin & family= Playfair:wght@400;500;600;700 & family= Roboto+Condensed & display=swap');
+*{
+    font-family: 'DM Mono', monospace;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Pangolin', cursive;
+    font-family: 'Playfair', serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+header{
+    background-image: url(../IMG/paisajes-de-yosemite-46208063.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.menu{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.menu .logo{
+    font-weight: 700;
+    font-size: 25px;
+    color: #58FA58;
+}
+.menu .navbar ul{
+    list-style: none;
+}
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: white;
+    display: block;
+}
+.menu .navbar ul li a:hover{
+    color: #5858FA;
+}
+#menu{
+    display: none;
+}
+.menu-icono{
+    width: 45px;
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+.header-text{
+    text-align: center;   
+}
+.header-text h1{
+    color: white;
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.servicies{
+    background-color: #0489B1;
+    padding: 0px 0px 100px 0px;
+    text-align: center;
+    color: white;
+}
+.servicies h2{
+    font-size: 55px;
+    margin-bottom: 25px;
+}
+.txt-1{
+    font-size: 18px;
+    padding: 0px 200px;
+    margin-bottom: 55px;
+}
+.group-services{
+    display: flex;
+    justify-content: space-between;
+}
+.servicie{
+    padding: 35px 25px;
+    background-color: #045FB4;
+    box-shadow: 0px 0px 15px black;
+    margin: 0px 10px;
+}
+.servicie img{
+    width: 360px;
+    margin-bottom: 25px;
+}
+.servicie h3{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.servicie p{
+    font-size: 18px;
+}
+.porfolio{
+    background-color: green;
+    padding: 100px 0px;
+    color: black;
+    font-size: 18px;
+}
+.g-porfolio{
+    display: flex;
+}
+.porfolio-txt-1 h2{
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+.porfolio-txt-2 h2{
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+.porfolio-txt-3 h2{
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+.porfolio-txt-1{
+    text-align: right;
+}
+.porfolio-txt-2{
+    text-align: right;
+}
+.porfolio-txt-3{
+    text-align: right;
+}
+.imgs img{
+    width: 300px;
+    margin: 0px 20px 70px 20px;
+    border-radius: 15px;
+}
+footer{
+    padding: 150px 0px;
+    background-color: #A4A4A4; 
+}
+.ft container{
+    display: flex;
+    justify-content: space-between;
+}
+.enlace h3{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.enlace li{
+    list-style: none;
+}
+.enlace a{
+    color: white;
+    display: block;
+    margin-bottom: 15px;
+}
+@media(max-width: 991px){
+    .menu{
+        padding: 20px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #0B610B;
+        display: none;
+    }
+    .menu .navbar ul li{
+        width: 100%;
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+    header{
+        height: 60vh;
+    }
+    .header-text{
+        margin-top: 50px;
+        padding: 0px 25px;
+    }
+    .servicies{
+        padding: 30px;
+    }
+    .txt-1{
+        padding: 0px;
+        margin-bottom: 35px;
+    }
+    .group-services{
+        flex-direction: column;
+    }
+    .servicie {
+        margin-bottom: 20px;
+    }
+    .porfolio{
+        padding: 30px;
+    }
+    .g-porfolio{
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .porfolio-txt-1{
+        text-align: center;
+    }
+    .porfolio-txt-2{
+        text-align: center;
+    }
+    .porfolio-txt-3{
+        text-align: center;
+    }
+    .imgs img{
+        display: none;
+    } 
+    footer{
+        padding: 30px;
+    }
+    .ft{
+        text-align: center;
+        flex-direction: column;
+    }
+}
